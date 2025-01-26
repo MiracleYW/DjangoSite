@@ -1,11 +1,83 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>博客岛</title>
-    </head>
-    <body>
-        <h1>欢迎来到博客岛！</h1>
-        <p>这里是博客的首页，欢迎访问！</p>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>博客岛</title>
+    <script src="{% static 'bootstrap5/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <img src="{% static 'images/logo.png' %}" alt="logo" width="50" height="50">
+                <a href="#" class="navbar-brand px-4 me-2 mb-3 mb-md-0 text-primary">博客岛</a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">首页</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">发布文章</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">文章分类</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">标签云</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">关于</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">登录</button>
+                    <button type="button" class="btn btn-primary">注册</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+        <div class="container border-dark mb-3 p-3" style="background-color: #e9e4e4;">
+            <div class="row">
+                <div class="card text-center col border-primary me-2 mb-3">
+                    <div class="card-header"> Featured </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+                </div>
+                <div class="card text-center col border-primary mb-3">
+                    <div class="card-header"> Featured </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card text-center col border-primary me-2 mb-3">
+                    <div class="card-header"> Featured </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+                </div>
+                <div class="card text-center col border-primary mb-3">
+                    <div class="card-header"> Featured </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted"> 2 days ago </div>
+                </div>
+            </div>
+        </div>
+</body>
 </html>
