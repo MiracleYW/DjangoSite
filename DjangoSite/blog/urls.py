@@ -5,4 +5,5 @@ app_name = 'blog'
 urlpatterns = [
     path('index/', views.index, name='index'),
     path('login/', views.login, name='login'),
+    path('register/', views.register, name='register'),
 ]
