@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <title>博客岛</title>
-    <script src="{% static 'bootstrap5/bootstrap.min.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap5/bootstrap.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.css' %}">
 </head>
 
 <body style="background-color: #b8b9b9;">
@@ -24,7 +24,7 @@
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="搜索..."
+                    <input type="search" class="form-control form-control-white text-bg-light" placeholder="搜索..."
                         aria-label="Search">
                 </form>
 
@@ -35,33 +35,69 @@
             </div>
         </div>
     </header>
-    <main class="container bg-white p-3 rounded">
+    <main class="container bg-white rounded p-3">
         <h3>博客列表</h3>
-        <div class="row row-cols-2 gx-3 gy-3">
-            <div class="card text-center">
-                <div class="card-header">
-                    Featured
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-body-secondary">
-                    2 days ago
+        <div class="row row-cols-2">
+            <div class="col g-2">
+                <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-body-secondary text-end">
+                        <img src="{% static 'images/logo.png' %}" alt="author" width="23" height="23" class="rounded-circle"> <samp>Author Name</samp>
+                    </div>
                 </div>
             </div>
-            <div class="card text-center">
-                <div class="card-header">
-                    Featured
+            <div class="col g-2">
+                <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-body-secondary text-end">
+                        <img src="{% static 'images/logo.png' %}" alt="author" width="23" height="23" class="rounded-circle"> <samp>Author Name</samp>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col g-2">
+                <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-body-secondary text-end">
+                        <img src="{% static 'images/logo.png' %}" alt="author" width="23" height="23" class="rounded-circle"> <samp>Author Name</samp>
+                    </div>
                 </div>
-                <div class="card-footer text-body-secondary">
-                    2 days ago
+            </div>
+            <div class="col g-2">
+                <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-body-secondary text-end"> 
+                        <img src="{% static 'images/logo.png' %}" alt="author" width="23" height="23" class="rounded-circle"> <samp>Author Name</samp>
+                    </div>
                 </div>
             </div>
         </div>
