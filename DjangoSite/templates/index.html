@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.min.css' %}">
 </head>
 
-<body>
+<body style = "background-color: #b8b9b9;">
     <header class="p-3 text-bg-dark bg-info">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <img src="{% static 'images/logo.png' %}" alt="logo" width="50" height="50">
                 <a href="#" class="navbar-brand px-4 me-2 mb-3 mb-md-0 text-primary">博客岛</a>
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
                     <li><a href="#" class="nav-link px-2 text-secondary">首页</a></li>
                     <li><a href="#" class="nav-link px-2 text-secondary">发布文章</a></li>
                     <li><a href="#" class="nav-link px-2 text-secondary">文章分类</a></li>
@@ -29,17 +29,19 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-primary me-2">登录</button>
+                    <button type="button" class="btn btn-outline-primary me-2 text-light">登录</button>
                     <button type="button" class="btn btn-primary">注册</button>
                 </div>
             </div>
         </div>
     </header>
 
-
-        <div class="container border-dark p-3 mb-2">
-            <div class="row">
-                <div class="card text-center col me-2 mb-2">
+    <div class="">
+        
+        <div class="container px-2 py-3 bg-light rounded-3">
+            博客列表
+            <div class="row px-2">
+                <div class="card text-center col">
                     <div class="card-header"> Featured </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
@@ -48,7 +50,7 @@
                     </div>
                     <div class="card-footer text-muted"> 2 days ago </div>
                 </div>
-                <div class="card text-center col mb-2">
+                <div class="card text-center col">
                     <div class="card-header"> Featured </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
@@ -58,8 +60,8 @@
                     <div class="card-footer text-muted"> 2 days ago </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="card text-center col me-2 mb-2">
+            <div class="row px-2">
+                <div class="card text-center col">
                     <div class="card-header"> Featured </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
@@ -68,7 +70,7 @@
                     </div>
                     <div class="card-footer text-muted"> 2 days ago </div>
                 </div>
-                <div class="card text-center col mb-2">
+                <div class="card text-center col">
                     <div class="card-header"> Featured </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
@@ -79,5 +81,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </body>
+
 </html>
