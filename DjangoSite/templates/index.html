@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.min.css' %}">
 </head>
 
-<body style = "background-color: #b8b9b9;">
-    <header class="p-3 text-bg-dark bg-info">
+<body style="background-color: #b8b9b9;">
+    <header class=" text-bg-dark bg-info mb-3">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <img src="{% static 'images/logo.png' %}" alt="logo" width="50" height="50">
@@ -29,59 +29,43 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-primary me-2 text-light">登录</button>
+                    <button type="button" class="btn btn-outline-light me-2 text-primary">登录</button>
                     <button type="button" class="btn btn-primary">注册</button>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class="">
-        
-        <div class="container px-2 py-3 bg-light rounded-3">
-            博客列表
-            <div class="row px-2">
-                <div class="card text-center col">
-                    <div class="card-header"> Featured </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted"> 2 days ago </div>
+    <main class="container bg-white p-3 rounded">
+        <h3>博客列表</h3>
+        <div class="row row-cols-2 gx-3 gy-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Featured
                 </div>
-                <div class="card text-center col">
-                    <div class="card-header"> Featured </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted"> 2 days ago </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    2 days ago
                 </div>
             </div>
-            <div class="row px-2">
-                <div class="card text-center col">
-                    <div class="card-header"> Featured </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted"> 2 days ago </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    Featured
                 </div>
-                <div class="card text-center col">
-                    <div class="card-header"> Featured </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted"> 2 days ago </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    2 days ago
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
