@@ -3,7 +3,9 @@ from . import views
 
 app_name = 'blog'
 urlpatterns = [
+    path('', views.index, name='index'),
     path('index/', views.index, name='index'),
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
+    path('publish/', views.publish, name='publish'),
 ]
